@@ -73,7 +73,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let city = weatherValues[indexPath.row].city
         let temperature = weatherValues[indexPath.row].temperature
         let conditions = weatherValues[indexPath.row].conditions
-        cell.textLabel?.text = "[\(cityCode)] \(city): \(temperature) F, \(conditions)"
+        cell.textLabel?.text = "[\(cityCode)] - \(city): \(temperature)F - \(conditions)"
         return cell
     }
 
